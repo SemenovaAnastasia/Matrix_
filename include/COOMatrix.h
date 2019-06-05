@@ -38,8 +38,8 @@ void fillCOO(TI rows_, TI cols_){};
   
 
 
- // _This operator=(const CSRMatrix<TI, TD> &B) { ConvertFromCOO(B); };
- // void COO_to_CSR(CSRMatrix<TI, TD><TI, TD> &B) const { B.Resize(rows, cols); };
+  _This operator=(const CSRMatrix<TI, TD> &B) { ConvertFromCOO(B); };
+  void COO_to_CSR(CSRMatrix<TI, TD><TI, TD> &B) const { B.Resize(rows, cols); };
 
   //_This operator=(const COOMatrix<TI, TD> &B) { ConvertFromCOO(B); };
 //  void  COO_to_CSC(CSCMatrix<TI, TD> &B) const { B.Resize(rows, cols); };
