@@ -1,0 +1,16 @@
+*.d
+*.o
+*.so
+*.mod
+*.MOD
+*.O
+*.a
+*.h5
+git_rev.h
+*.tar.*
+*.x
+*.P
+gitversion.h
+make.inc
+tmtags
+*.E
