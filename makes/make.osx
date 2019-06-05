@@ -1,0 +1,15 @@
+
+RUNLIB = echo
+COPTS= -O3 -fpic -g 
+		 
+LFLAGS= 
+
+CC=clang
+CXX=clang++
+CPP=$(CXX) -E
+RANLIB=echo
+
+MAKEDEPEND = $(CPP) $(CPPFLAGS) $< \
+     | sed -n 's/^\# *[0-9][0-9]* *"\([^"]*\)".*/$*.o: \1/p' \
+     | sort | uniq > $*.d
+
